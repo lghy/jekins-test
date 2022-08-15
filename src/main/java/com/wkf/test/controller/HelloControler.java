@@ -1,5 +1,6 @@
 package com.wkf.test.controller;
 
+import com.wkf.test.entity.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,9 @@ public class HelloControler {
 
     @RequestMapping("hello")
     public String Hello(){
-        return "Hello World jekins";
+        for (int i = 0;  ;i++) {
+            User user = new User("name"+i,"man",18);
+        }
+//        return "Hello World jekins";
     }
 }
