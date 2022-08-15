@@ -1,5 +1,8 @@
 plugins {
     id 'java'
+    id 'maven'
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
 group 'org.example'
