@@ -17,9 +17,10 @@ public class UserController {
 
     @RequestMapping("create")
     public String createUser(){
-        for (int i = 0;  ;i++) {
-            User user = new User("name"+i,"man",18);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1000000;  ;i++) {
+            sb.append(i*i);
+            User user = new User("name"+sb.toString(),"man",18);
         }
-//        return "create user success !";
     }
 }

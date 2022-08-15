@@ -16,11 +16,6 @@ public class HelloControler {
 
     @RequestMapping("hello")
     public String Hello(){
-        StringBuilder sb = new StringBuilder();
-        for (int i = 10000;  ;i++) {
-            sb.append(i);
-            User user = new User("name"+sb.toString(),"man",18);
-        }
-//        return "Hello World jekins";
+        return "Hello World jekins";
     }
 }
