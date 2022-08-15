@@ -1,4 +1,4 @@
-package com.wkf.test;
+package com.wkf.test.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
