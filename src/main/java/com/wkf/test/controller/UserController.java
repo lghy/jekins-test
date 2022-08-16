@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @ClassName UserController
  * @Description TODO
@@ -14,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController("/user")
 public class UserController {
+    List list = new ArrayList();
 
     @RequestMapping("create")
     public String createUser(){
@@ -22,5 +26,12 @@ public class UserController {
             sb.append(i*i);
             User user = new User("name"+sb.toString(),"man",18);
         }
+    }
+
+    @RequestMapping("add")
+    public String add(){
+        byte[] by = new byte[1024 * 1024];
+        list.add(by);
+        return "add success";
     }
 }
